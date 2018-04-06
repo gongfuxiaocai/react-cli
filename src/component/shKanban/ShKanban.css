@@ -1,0 +1,8 @@
+.kanban_data{padding: 20px 18px 14px; border-radius: 5px;}
+.kanban_data .ico{float: left;}
+.kanban_data .txt{float: left; margin-left: 18px; color: #fff;}
+.kanban_data .txt .item_title{font-size: 12px;}
+.kanban_data .txt .item_data{font-size: 24px; margin-top: 8px;}
+.kanban_data .txt .item_compare{font-size: 12px; margin: 8px 0 6px;}
+.kanban_data .txt .item_compare .s1{margin-right: 12px;}
+.kanban_data .txt .item_compare b{font-weight: normal; margin-left: 2px;}

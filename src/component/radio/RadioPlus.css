@@ -1,0 +1,32 @@
+.swiftBI_radio_plus{
+    position:relative;display:inline-block;vertical-align:middle;
+    margin-right:50px;border-radius:3px;cursor:pointer;-webkit-user-select:none;user-select:none;
+}
+.swiftBI_radio_plus:last-child{margin-right:0;}
+.swiftBI_radio_plus.primary{}
+.swiftBI_radio_plus.primary i{display:inline-block;position:relative;margin-right:10px;vertical-align:middle;border-radius:50%;border:1px solid #E2E2E2;}
+.swiftBI_radio_plus.primary span{display:inline-block;vertical-align:middle; color: #333333;}
+.swiftBI_radio_plus.primary.on i{border-color:#73228c;}
+.swiftBI_radio_plus.primary.on i:before{content:"";position:absolute;left:50%;top:50%;border-radius:50%;background:#73228c;}
+
+.swiftBI_radio_plus.primary.size_small i{width:18px;height:18px;}
+.swiftBI_radio_plus.primary.size_small i:before{width:10px;height:10px;margin-top:-5px;margin-left:-5px;}
+.swiftBI_radio_plus.primary.size_small span{height: 30px; line-height: 30px;}
+.swiftBI_panel_title .swiftBI_radio_plus.primary.size_big span{border-right:1px solid #D9DADC;}
+
+
+.swiftBI_radio_plus.primary.size_big{vertical-align:top;margin-right:0;}
+.swiftBI_radio_plus.primary.size_big span{display:block; height: 48px; line-height: 48px;width:80px;text-align:center;font-size:16px;}
+
+.swiftBI_radio_plus.text_only{margin-right:20px;color:#63676B;border-radius:0;}
+.swiftBI_radio_plus.text_only.on{color:#73228c;}
+.swiftBI_radio_plus.text_only.size_small span{height: 30px; line-height: 30px;}
+
+.swiftBI_radio_plus.text_line{margin-right:20px;color:#63676B;border-radius:0;box-sizing:border-box;color:#999999;padding:0 5px;}
+.swiftBI_radio_plus.text_line.on{color:#333333;position:relative;}
+.swiftBI_radio_plus.text_line.on:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#73228c;}
+.swiftBI_radio_plus.text_line.size_small span{height: initial; line-height: initial;}
+
+.swiftBI_radio_plus.button{margin-right:10px;color:#999999;border-radius:2px;box-sizing:border-box;padding:0 10px;}
+.swiftBI_radio_plus.button.on{color:#fff;background:#73228c;}
+.swiftBI_radio_plus.button.size_small span{height:26px;line-height:26px;}

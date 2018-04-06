@@ -1,0 +1,19 @@
+@import "../theme/loader";
+
+.swiftBI_bread_crumbs{overflow:hidden;}
+.swiftBI_bread_crumbs .crumb_item{line-height:38px;text-align:center;color:#AEAEAE;border:1px solid #E7E7E7;position:relative;}
+
+.swiftBI_bread_crumbs .crumb_item.on{background: @swift_primary_color;color:#ffffff;border:1px solid @swift_primary_color;}
+.swiftBI_bread_crumbs .crumb_item.done{background:#F6F6F6;color:#A0A0A0;border:1px solid #E7E7E7;}
+.swiftBI_bread_crumbs .crumb_item:last-child:after{content:none;}
+.swiftBI_bread_crumbs .crumb_item:after{
+    content:"";position:absolute;z-index:1;top:5px;right:-15px;width:28px;height:28px;border-radius:0 0 0 50px;background:#fff;
+    border-style:solid;border-width:1px 1px 0 0;border-color:rgba(100, 100, 100, 0.1);
+    transform:rotate(45deg);box-shadow:2px -2px 0 2px rgba(255, 255, 255, 1), 3px -3px 0 1px #AEAEAE;
+}
+.swiftBI_bread_crumbs .crumb_item.on:after{
+    background: @swift_primary_color;
+}
+.swiftBI_bread_crumbs .crumb_item.done:after{
+    background: #F6F6F6;
+}

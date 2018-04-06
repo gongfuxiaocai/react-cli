@@ -1,0 +1,34 @@
+@import "../theme/loader";
+
+.swiftpass_nav_plus{
+    overflow:auto;
+    &::-webkit-scrollbar{width:7px;}
+    &::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+    &::-webkit-scrollbar-track{background:#ddd;}
+
+    .swiftBI_icon{margin-right:20px;}
+    .ant-menu-item{
+        height:50px;line-height:50px;
+    }
+
+    //.ant-menu-submenu-inline > .ant-menu-submenu-title:after{
+    //    text-indent:0;right:10px;
+    //    font-family: "iconfont" !important;
+    //    content:"\e605";
+    //    font-size:26px;
+    //}
+    .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title:after{transform:rotate(90deg) scale(0.67)}
+    .ant-menu-sub>li{text-indent:22px;}
+    .ant-menu-submenu-title{
+        height:50px;line-height:50px;
+    }
+    .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title{height:50px;line-height:50px;}
+    .ant-menu-sub.ant-menu-inline > .ant-menu-item{height:50px;line-height:50px;}
+    .ant-menu-inline.ant-menu-sub{background:@swift_naviagtor_submenu_bg;}
+    &.ant-menu.ant-menu-dark{
+        background-color:@swift_naviagtor_bg;
+        .ant-menu-item-selected{background-color:@swift_naviagtor_menu_on_bg;}
+    }
+    .iconfont{font-size:16px;}
+
+}

@@ -1,0 +1,63 @@
+@import "../theme/loader";
+
+.innovate_checkbox_group{display:inline-block;vertical-align:middle;}
+
+.innovate_checkbox{
+    position:relative;display:inline-block;vertical-align:middle;cursor:pointer;
+    &:not(:last-child){margin-right:15px;}
+    >span{display:inline-block;vertical-align:middle;font-size:14px;line-height:16px;}
+    &>i{
+        display:inline-block;vertical-align:middle;width:16px;height:16px;position:relative;
+        border:1px solid #E2E2E2;margin-right:10px;border-radius:2px;background:#fff;
+        &:before{
+            content:"";position:absolute;width:6px;height:10px;
+            top:1px;left:4px;
+            border:2px solid @swift_checkbox_on;border-top:0;border-left:0;
+            transform:rotate(45deg) scale(0);
+            transition: all 0.2s cubic-bezier(0.12,0.4,0.29,1.46) 0.1s;
+        }
+        &:after{
+            content:"";position:absolute;border:1px solid @swift_checkbox_on;
+            top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:2px;visibility: hidden;
+        }
+    }
+    &:hover>i:after{visibility:visible;}
+
+    &.on>i {
+        border-color:@swift_checkbox_on;
+        &:before{
+            transform:rotate(45deg) scale(1);
+        }
+
+        &:after{
+            animation:swift_animate_check 0.36s ease-in-out;
+        }
+    }
+
+    &.disable{
+        cursor:not-allowed;color:#DDDDDD;
+        &>i{background:#F7F7F7;}
+        &:hover>i:after{visibility:hidden;}
+        &.on>i{border-color:#E2E2E2;}
+        &.on>i:before{border-color:#E2E2E2;}
+    }
+
+}
+
+
+
+@keyframes swift_animate_check {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes swift_animate_check_tick{
+    0%{transform: rotate(45deg) scale(0.8); }
+
+}

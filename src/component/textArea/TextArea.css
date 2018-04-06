@@ -1,0 +1,9 @@
+textarea{ font-family: Microsoft YaHei; border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.swiftBI_textarea_wrap{position:relative;}
+.swiftBI_textarea{
+    display:block;padding:5px;width:100%;font-size:14px;resize:none;outline:0;
+    border:1px solid #DADBDD;box-sizing:border-box;
+}
+.swiftBI_textarea:focus{border-color:#73228c;}
+.swiftBI_textarea>textarea{}
+.swiftBI_textarea_counter{position:absolute;right:5px;bottom:5px;text-align:right;color:#b2b2b2;}

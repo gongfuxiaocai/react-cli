@@ -1,0 +1,135 @@
+html,body{ height:100%;}
+body{
+	margin:0;
+	padding:0;
+	font-size:14px !important;
+	font-family: Microsoft YaHei !important;
+	color:#333 !important;
+}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,th,td{ margin:0; padding:0; list-style:none;}
+a img{ border:none;}
+a{ color:#333; text-decoration:none;}
+a:hover{ text-decoration:none;}
+input,textarea,button{ font-family: Microsoft YaHei; border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.center{ width:1200px; margin:0 auto; text-align:left;}
+.clear{ clear:both;}
+.clearfix2:after{ content:""; display:block; height:0; clear:both; visibility:hidden;}
+.fl{ float:left;}
+.fr{ float:right;}
+.none{ display:none !important;}
+.hide{ display:none;}
+.hidden{ visibility:hidden;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#ccc;} /* WebKit browsers */
+input:-moz-placeholder,textarea:-moz-placeholder{color:#ccc;} /* Mozilla Firefox 4 to 18 */
+input::-moz-placeholder,textarea::-moz-placeholder{color:#ccc;} /* Mozilla Firefox 19+ */
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#ccc;} /* Internet Explorer 10+ */
+
+/*布局*/
+html,body,#container,.full_height{height:100%;}
+.init_scroll{overflow:hidden;-webkit-overflow-scrolling:touch;}
+.innovate_content{position:relative;margin:60px 0 0 220px;overflow:auto;-webkit-overflow-scrolling:touch;}
+.innovate_content::-webkit-scrollbar{width:7px;}
+.innovate_content::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+.innovate_content::-webkit-scrollbar-track{background:#ddd;}
+
+/*datePicker-style*/
+/*.antDatePicker{display: inline-block;position: relative;}*/
+/*.antDatePicker input{width: 100%;color: #565A5C;font-size: 14px;font-family: Montserrat, "Helvetica Neue", "Helvetica", "Arial", "sans-serif";font-weight: 300;line-height: 32px;height: 32px;border-radius: 0;border: 1px solid #D9DADC;}*/
+/*.antDatePicker input:hover{border-color: #D9DADC !important;}*/
+/*.antDatePicker input:active{border-color: #D9DADC !important;}*/
+/*.antDatePicker span.ant-calendar-picker{width: 200px !important;}*/
+
+/* hr 标签横线样式 */
+hr.line { height: 1px; border: none; border-top: 1px solid #EDEBEB; }
+
+/*首页的灰色背景布局*/
+.index_wrap{position:absolute;left:0;right:0;top:0;bottom:0;background:#F2F3F5;overflow:auto;}
+.index_wrap::-webkit-scrollbar{width:7px;}
+.index_wrap::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+.index_wrap::-webkit-scrollbar-track{background:#ddd;}
+
+/*修改面包屑向下偏移3px的问题*/
+.fixStyle{margin-top: -3px;}
+
+.txt_table table.swiftBI_table th:last-child{text-align: left !important;}
+.txt_table table.swiftBI_table td:last-child{text-align: left !important;}
+
+/* input 框 readOnly 状态下的背景色和文字颜色 */
+input.readOnlyInp {cursor:not-allowed;color:#666666 !important;background-color:#F6F6F6 !important;}
+
+/*表格的按钮间距统一*/
+.swiftBI_table .swiftBI_button.a_code{padding:0 6px;border-right:1px solid #DDDDDD;}
+.swiftBI_table .swiftBI_button.a_code:last-child{border-right:0;padding-right:0;}
+
+/*头部登录*/
+.innovate_dwTop{position: fixed;top: 0;left: 220px;right: 0;z-index:999;background-color: #f4f6fc;}
+.innovate_contTop{height: 60px;border-bottom: 1px solid #e2e2e2;background-color: #fff;padding: 0 10px 0 20px;overflow: hidden;}
+.innovate_loginTop_lt{float: left;font-size: 20px;color: #000;line-height: 60px;text-align: left;}
+.innovate_loginTop_rt{float: right;color: #212121;line-height: 30px;text-align: left;padding: 15px 0;}
+.innovate_loginTop_line{padding: 0 10px 0 20px;}
+.innovate_loginTop_a{display: inline-block;padding: 0 10px;color: #4c8dee;cursor: pointer;}
+.innovate_loginTop_a:hover{text-decoration: underline;}
+.innovate_pageTabs{margin-top: -1px;}
+
+/* 头部搜索部分 */
+/*#container .swiftBI_mask{*/
+	/*z-index: 2000;*/
+/*}*/
+/*#container .swiftBI_popup_cont.animate{*/
+	/*z-index: 2001;*/
+/*}*/
+/*#container .search_bar_panel{*/
+	/*z-index: 2002;*/
+/*}*/
+.header_box{
+	padding: 12px 24px 0;
+	background: #fff;
+	border-bottom: 1px solid #e2e2e2;
+}
+.header_box .filter_wrap{
+	border: none;
+}
+.header_box .filter_row .swiftBI_cell{
+margin-right: 42px;
+}
+.datagrid_box{
+padding: 24px;
+background-color: #f4f6fc;
+}
+.einvoice_page .swiftBI_popup_cont{
+overflow: visible;
+}
+.einvoice_page .swiftBI_popup_cont .partial{
+position: fixed;
+}
+.header_box .ant-calendar-picker-clear{
+right: 28px;
+}
+.invoice_cont_dom .ant-table-tbody > tr > td,
+.invoice_cont_dom .swiftBI_table .ant-table-tbody > tr > td {
+border: none;
+}
+.invoice_cont_dom .swiftBI_input{
+color: #333;
+}
+/*.channel_manage .swiftBI_mask{*/
+	/*z-index: 1999;*/
+/*}*/
+/*.channel_manage .search_bar_panel{*/
+	/*z-index: 2001;*/
+/*}*/
+#container .ant-select-dropdown{
+	z-index: 998;
+}
+.make-invoice-tip{
+    margin-bottom: 16px;
+    padding-left: 24px;
+    line-height: 40px;
+    color: #E34221;
+    background-color: #FFF6F5;
+}
+.make-invoice-tip p{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}

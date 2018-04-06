@@ -1,0 +1,13 @@
+{
+  "presets":[
+    "env",
+    "react",
+    "stage-0"
+  ],
+  "plugins":[
+      "babel-polyfill",
+      ["add-module-exports"],
+      ["transform-runtime"],
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ]
+}

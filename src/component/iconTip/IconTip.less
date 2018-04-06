@@ -1,0 +1,70 @@
+@import "../theme/loader";
+
+.swiftBI_icon_tip{
+    position:relative;font-size:14px;display:inline-block;
+    width:18px;height:18px;
+
+    .swiftBI_icon{color:@swift_primary_color;font-size:18px;cursor:pointer;}
+
+    &:hover .tip_box{display:block;}
+
+    .tip_box{
+        position:absolute;z-index:3;
+        width:280px;border:1px solid #d3d3d3;background:#ffffff;display:none;
+        line-height:18px;padding:16px 20px;
+        &:before{
+            content:"";position:absolute;width:14px;height:14px;
+            background:#ffffff;
+            border-left:1px solid #d3d3d3;
+            border-top:1px solid #d3d3d3;
+        }
+
+        &.bottom{
+            /*内容位置*/
+            left:-30px;top:34px;
+            /*三角形位置*/
+            &:before{
+                top:-8px;left:32px;
+                transform:rotate(45deg);
+            }
+        }
+
+        &.right{
+            /*内容位置*/
+            left:34px;top:-20px;
+            /*三角形位置*/
+            &:before{
+                top:24px;left:-8px;
+                transform:rotate(-45deg);
+            }
+        }
+
+        &.top{
+            /*内容位置*/
+            bottom:28px;left:-31px;
+            /*三角形位置*/
+            &:before{
+                bottom:-7px;left:32px;
+                transform:rotate(225deg);
+            }
+        }
+
+        &.left{
+            /*内容位置*/
+            right:34px;top:-25px;
+            /*三角形位置*/
+            &:before{
+                top:32px;right:-7px;
+                transform:rotate(132deg);
+            }
+        }
+
+
+
+    }
+
+
+}
+
+.swiftBI_icon_tip .tip_box>p,.tip_box>div{margin-bottom:6px;}
+.swiftBI_icon_tip .tip_box>p:last-child,.tip_box>div:last-child{margin-bottom:0;}

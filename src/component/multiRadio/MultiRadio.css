@@ -1,0 +1,12 @@
+.swiftBI_multi_radio{display:inline-block;border:1px solid #D3D3D3;overflow: hidden;line-height:initial;}
+.swiftBI_panel_title .swiftBI_multi_radio.square {border-width:0 1px 0 0;}
+.swiftBI_multi_radio.round{border-radius:12px;}
+.swiftBI_multi_radio .swiftBI_radio.primary.size_small{margin-right:0;font-size:14px;}
+.swiftBI_multi_radio.round .swiftBI_radio.primary.size_small span{padding:0 12px;height:26px;line-height:26px;border-right:1px solid #D3D3D3;}
+.swiftBI_multi_radio.round .swiftBI_radio.primary.size_small:last-child span{border-right:0;}
+.swiftBI_multi_radio.round .swiftBI_radio.primary.size_small:first-child span{padding:0 14px;}
+.swiftBI_multi_radio.round .swiftBI_radio.primary.size_small:last-child span{padding:0 14px;}
+
+
+.swiftBI_multi_radio.square .swiftBI_radio.primary.size_big span{border-right:1px solid #D3D3D3;}
+.swiftBI_multi_radio.square .swiftBI_radio.primary.size_big:last-child span{border-right:0;}

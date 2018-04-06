@@ -1,0 +1,39 @@
+@import "../theme/loader";
+
+.icon_button{display:inline-block;-webkit-user-select:none;user-select:none;text-decoration:none;text-align: center;cursor:pointer;position:relative;}
+
+.icon_button{font-size:14px;color:#333;}
+
+.icon_button>span{display:inline-block;vertical-align: middle;margin-left:5px;}
+
+.icon_button.fold{
+    @arrow-color:@swift_primary_color;@arrow-width:9px;
+    position:relative;height:30px;line-height:30px;padding-right:16px;color:@swift_primary_color;
+    .swiftBI_icon{position:absolute;right:0;top:0;}
+    .icon-fold-down{
+
+        &:before{
+            content:'';position:absolute;right:0px;top:50%;margin-top:15px;
+            background:@arrow-color;width:@arrow-width;height:1px;transform:rotate(54deg);
+            transition:transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        &:after{
+            content:'';position:absolute;right:-5px;top:50%;margin-top:15px;
+            background:@arrow-color;width:@arrow-width;height:1px;transform:rotate(-54deg);
+            transition:transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+    }
+    .icon-fold-up{
+        &:before{
+            content:'';position:absolute;right:0px;top:50%;margin-top:15px;
+            background:@arrow-color;width:@arrow-width;height:1px;transform:rotate(-54deg);
+            transition:transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        &:after{
+            content:'';position:absolute;right:-5px;top:50%;margin-top:15px;
+            background:@arrow-color;width:@arrow-width;height:1px;transform:rotate(54deg);
+            transition:transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+    }
+}

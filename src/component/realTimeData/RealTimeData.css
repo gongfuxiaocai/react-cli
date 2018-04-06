@@ -1,0 +1,18 @@
+.realtime_body{padding: 0 10px; display: -webkit-flex; display: flex; display: -webkit-box; justify-content: space-between; -webkit-box-pack: justify;}
+.realtime_wrap{float: left;}
+.realtime_data{width: 300px; padding: 20px 18px 14px; border-radius: 5px;}
+.realtime_data.rd1{background: #64a1f8;}
+.realtime_data.rd2{background: #6bd188;}
+.realtime_data.rd3{background: #f9ce69;}
+.realtime_data.rd4{background: #f98e65;}
+.realtime_data .ico{float: left; width: 28px; height: 28px; background: url(../Resource/images/realtime_ico_sprite.png) no-repeat;}
+.realtime_data.rd1 .ico{background-position: 0 0;}
+.realtime_data.rd2 .ico{background-position: 0 -30px;}
+.realtime_data.rd3 .ico{background-position: 0 -60px;}
+.realtime_data.rd4 .ico{background-position: 0 -60px;}
+.realtime_data .txt{float: left; margin-left: 18px; color: #fff;}
+.realtime_data .txt .item_title{font-size: 12px;}
+.realtime_data .txt .item_data{font-size: 24px; margin-top: 8px;}
+.realtime_data .txt .item_compare{font-size: 12px; margin: 8px 0 6px;}
+.realtime_data .txt .item_compare .s1{margin-right: 12px;}
+.realtime_data .txt .item_compare b{font-weight: normal; margin-left: 2px;}

@@ -1,0 +1,17 @@
+.swiftBI_pop_checkbox{
+    position:relative;display:inline-block;vertical-align:middle;
+    margin-bottom:5px;cursor:pointer;overflow:hidden;
+    -webkit-user-select:none;user-select:none;
+}
+.swiftBI_pop_checkbox:last-child{margin-right:5px;}
+.swiftBI_pop_checkbox.primary {}
+.swiftBI_pop_checkbox.primary .pop_checkbox_inner{padding-left:4px;}
+.swiftBI_pop_checkbox.primary.fix .pop_checkbox_inner{padding-right:4px;}
+
+.swiftBI_pop_checkbox.primary.check .pop_checkbox_inner{}
+.swiftBI_pop_checkbox.primary.check span{background: #5D9CEC; color: #fff;}
+.swiftBI_pop_checkbox.primary .pop_checkbox_txt{display:block;padding: 4px; color: #666;}
+.swiftBI_pop_checkbox.primary .pop_checkbox_val{display:block;padding:0 4px 4px 4px;font-size:12px;color:#878787;}
+.swiftBI_pop_checkbox.primary>span:last-child{padding-bottom:4px;}
+
+.swiftBI_pop_checkbox.primary .pop_checkbox_txt,.swiftBI_pop_checkbox.primary .pop_checkbox_val{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

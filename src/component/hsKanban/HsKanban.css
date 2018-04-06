@@ -1,0 +1,11 @@
+.innovate_kanban{padding-left:42px;position:relative;margin-left:40px;}
+.innovate_kanban.hasLine:after{content:'';position:absolute;right:0;top:50%;margin-top:-15px;height:30px;width:1px;background:#ECECED;}
+.innovate_kanban_title{color:#999999;font-size:12px;}
+.innovate_kanban_main_data{font-size:30px;color:#333333;position:relative;margin-top:10px;}
+.innovate_kanban_main_data>i {position:absolute;left:-42px;top:50%;margin-top:-12px;}
+.innovate_kanban_compare{margin-top:10px;}
+.innovate_kanban_compare>span{font-size:12px;color:#656565;margin-right:10px;}
+.innovate_kanban_compare>span:last-child{margin-right:0;}
+.innovate_kanban_compare em{font-style:normal;}
+.innovate_kanban_compare>span em.red{color:#FF3B00;}
+.innovate_kanban_compare>span em.green{color:#67D28D;}

@@ -1,0 +1,8 @@
+.data_tab{display: -webkit-flex; display: flex; display: -webkit-box;}
+.data_tab li{width: 1px; height: 90px; -webkit-flex: 1; flex: 1; -webkit-box-flex: 1; background: #f4f6fc; border: 1px solid #e2e2e2; border-right: none; text-align: center; cursor: pointer;}
+.data_tab li:last-child{border-right: 1px solid #e2e2e2;}
+.data_tab li p:first-child{padding: 15px 0 5px; color: #999;}
+.data_tab li p:last-child{font-size: 24px;}
+.data_tab li.on{background: #4c8dee; color: #fff; border-color: #4c8dee; position: relative;}
+.data_tab li.on p:first-child{color: #fff;}
+.data_tab li.on:after{content: ""; position: absolute; left: 50%; bottom: -9px; margin-left: -8px; width: 16px; height: 9px; background: url(../Resource/images/bottom_arrow.png) no-repeat;}

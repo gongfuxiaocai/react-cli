@@ -1,0 +1,6 @@
+.gd_kanban_wrap{border:1px solid #E7E7EB;padding:25px 0;}
+.gd_kanban .swiftBI_layout_table_cell{border-right:1px solid #E7E7EB;padding-left:20px;}
+.gd_kanban .swiftBI_layout_table_cell:last-child{border-right:0;}
+.gd_kanban .swiftBI_layout_table_cell>div:not(:last-child){margin-bottom:12px;}
+.gd_kanban .swiftBi_cell_body{color:#000000;font-size:20px;font-family:'arial';font-weight:bold;}
+.gd_kanban .swiftBI_cell_label{margin-right:13px;}

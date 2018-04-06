@@ -1,0 +1,21 @@
+@import "../theme/loader";
+
+.swiftBI_tab{position:relative;}
+.swiftBI_tabbar_wrap{position:relative;border-bottom:1px solid #EBEBED;margin-top: -1px;background-color: #fff;}
+.swiftBI_tabbar{position:relative;z-index:2;}
+.swiftBI_tabbar>li{
+    display:inline-block;cursor:pointer;text-align:center;
+    height:60px;line-height:60px;position:relative;font-size:14px;
+}
+.swiftBI_tabbar>li.on{color:@swift_tab_on;}
+
+.swiftBI_tabbar_indicator{
+    position:absolute;bottom:0;left:0;height:4px;background:@swift_tab_on;
+    -webkit-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+
+
+.swiftBI_tab_body{padding:10px 0;}
+.swiftBI_tab_body.no_padding{padding:0;}

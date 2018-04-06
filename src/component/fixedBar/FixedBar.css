@@ -1,0 +1,26 @@
+.fixed_bar{}
+.fixed_bar .item{width: 42px; height: 42px; margin-bottom: 1px; position: relative; cursor: pointer;}
+.fixed_bar .weixin{background: #fff url(../Resource/images/ico_weixin.png) center center no-repeat;}
+.fixed_bar .weixin:hover{background: #4C8DEE url(../Resource/images/ico_weixin_white.png) center center no-repeat;}
+.fixed_bar .qq{background: #fff url(../Resource/images/ico_qq.png) center center no-repeat;}
+.fixed_bar .qq:hover{background: #4C8DEE url(../Resource/images/ico_qq_white.png) center center no-repeat;}
+.fixed_bar .mail{background: #fff url(../Resource/images/ico_mail.png) center center no-repeat;}
+.fixed_bar .mail:hover{background: #4C8DEE url(../Resource/images/ico_mail_white.png) center center no-repeat;}
+.fixed_bar .tel{background: #fff url(../Resource/images/ico_tel.png) center center no-repeat;}
+.fixed_bar .tel:hover{background: #4C8DEE url(../Resource/images/ico_tel_white.png) center center no-repeat;}
+.fixed_bar .return_top{background: #fff url(../Resource/images/ico_top.png) center center no-repeat;}
+.fixed_bar .return_top:hover{background: #4C8DEE url(../Resource/images/ico_top_white.png) center center no-repeat;}
+.fixed_bar .item .a_btn{display: block; height: 100%;}
+.fixed_bar .item .info_wrap{position: absolute; left: 42px; padding-left: 10px; display: none; cursor: default;}
+.fixed_bar .item .info_wrap.erweima{top: -56px;}
+.fixed_bar .item .info_wrap.txt{top: -28px;}
+.fixed_bar .item .info_box{position: relative; padding: 10px; background: #fff; text-align: left;}
+.fixed_bar .item .info_box:after{content: ""; position: absolute; left: -6px; top: 50%; margin-top: -5px; width: 6px; height: 10px; background: url(../Resource/images/left_arrow.png) no-repeat;}
+.fixed_bar .item .info_box img{width: 110px; height: 110px;}
+.fixed_bar .item .info_box .guanzhu{margin-top: 4px; text-align: center; color: #666;}
+.fixed_bar .item .info_box .top_info{padding: 0 2px 6px; border-bottom: 1px solid #ededed;}
+.fixed_bar .item .info_box .top_info p{line-height: 1.6;}
+.fixed_bar .item .info_box .top_info p.last{font-size: 16px; white-space: nowrap;}
+.fixed_bar .item .info_box .top_info p.telephone{color: #4C8DEE;}
+.fixed_bar .item .info_box .tips{color: #9B9D9D; padding: 0 2px; margin-top: 8px; white-space: nowrap;}
+.fixed_bar .item:hover .info_wrap{display: block;}

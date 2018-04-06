@@ -1,0 +1,108 @@
+.searchPop_search_box{
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    position: relative;
+    border: 1px solid #D9DADC;
+    background-color: #fff;
+}
+.searchPop_search_box .swiftBI_input.primary{
+    border: none;
+    height: 30px;
+    line-height: 30px;
+}
+.searchPop_search_box .swiftBI_input.primary:focus{
+    border: none;
+    box-shadow: none;
+}
+.searchPop_search_box .swiftBI_input{
+    cursor: default;
+    border: none;
+    box-shadow: none;
+}
+.searchPop_row{
+    margin-bottom: 16px;
+}
+.searchPop_label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 84px;
+}
+.searchPop_content{
+    display: inline-block;
+    vertical-align: top;
+}
+.searchPop_search_delete{
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.searchPop_search_btn{
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+.searchPop_search_btn .iconfont{
+    font-size: 22px;
+}
+.searchPop_content_box{
+    padding: 12px 24px;
+}
+.searchPop_content_label{
+    display: inline-block;
+    width: 84px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.searchPop_content_input,
+.searchPop_content_button{
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.searchPop_content_tree_box{
+    display: inline-block;
+    width: 300px;
+    height: 333px;
+    position: relative;
+    overflow: auto;
+    background-color: #F4F6FC;
+
+}
+.searchPop_content_tree_box .ant-tree li span.ant-tree-icon_loading{
+    background: #F4F6FC;
+}
+.searchPop_content_table_box{
+    display: inline-block;
+    width: 512px;
+    height: 333px;
+    overflow: hidden;
+}
+.margin-right_28{
+    margin-right: 28px;
+}
+.searchPop_content_table_box .swiftBI_table.ant-table-wrapper{
+    border-radius: 5px 5px 0 0;
+}
+.searchPop_content_table_box .ant-table-thead > tr > th.ant-table-selection-column,
+.searchPop_content_table_box .ant-table-tbody > tr > td.ant-table-selection-column{
+    width: 32px;
+    min-width: 32px;
+}
+.searchPop_content_table_box .ant-table-fixed tbody tr td:last-child{
+    text-align: left;
+}
+.searchPop_content_table_box .ant-table-placeholder{
+    min-height: 96px;
+    line-height: 96px;
+}

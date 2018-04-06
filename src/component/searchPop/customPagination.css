@@ -1,0 +1,36 @@
+.custom_pagination_box{
+    height: 32px;
+    background: #f4f5f9;
+}
+.float_right{
+    float: right;
+}
+.custom_pagination{
+    width: 48px;
+    height: 32px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+.custom_pagination span{
+    width: 12px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.custom_pagination .prev {
+    background: url(../../images/icon/search_bar_prev.png) no-repeat;
+    cursor: default;
+}
+.custom_pagination.prev.disable{
+    background: url(../../images/icon/search_bar_prev_disable.png) no-repeat;
+    cursor: not-allowed;
+}
+.custom_pagination.next {
+    background: url(../../images/icon/search_bar_next.png) no-repeat;
+    cursor: default;
+}
+.custom_pagination.next.disable{
+    background: url(../../images/icon/search_bar_next_disable.png) no-repeat;
+    cursor: not-allowed;
+}

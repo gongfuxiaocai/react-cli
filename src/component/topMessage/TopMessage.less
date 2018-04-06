@@ -1,0 +1,64 @@
+@import "../theme/loader";
+
+.swift_top_message{
+    padding:8px;text-align:center;
+    animation: messageMoveIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),messageMoveOut 0.2s 2.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-animation: messageMoveIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),messageMoveOut 0.2s 2.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    .swift_top_message_cont{
+        padding:8px 16px;border-radius:2px;background:#ffffff;display:inline-block;
+        box-shadow:0 2px 8px rgba(0, 0, 0, 0.2);
+        .swiftBI_icon{
+            margin-right:8px;vertical-align:middle;line-height: 1;font-size:16px;position:relative;top:1px;
+            &.icon-yes{color:@swift_primary_color;}
+            &.icon-warn{color:#ffbf00;}
+            &.icon-fail{color:#f04134;}
+        }
+        .swift_top_message_txt{font-size:14px;display:inline-block;vertical-align: middle;}
+    }
+
+}
+@keyframes messageMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes messageMoveOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    padding:0;
+    transform: translateY(-16px);
+  }
+}
+
+@-webkit-keyframes messageMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes messageMoveOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    padding:0;
+    transform: translateY(-16px);
+  }
+}

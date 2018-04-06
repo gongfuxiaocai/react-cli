@@ -1,0 +1,7 @@
+.swiftBI_layout_table{display:table;width:100%;}
+.swiftBI_layout_table.equal{table-layout:fixed;}
+
+.swiftBI_layout_table_cell{display:table-cell;}
+
+.swiftBI_layout_table.valign .swiftBI_layout_table_cell{vertical-align:middle;}
+.swiftBI_layout_table.halign .swiftBI_layout_table_cell{text-align:center;}

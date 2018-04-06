@@ -1,0 +1,4 @@
+.filter_row{margin-bottom: 0;}
+.filter_row:last-child{margin-bottom:0;}
+.filter_row .swiftBI_cell{margin-right:40px;margin-bottom: 20px;}
+.filter_row:last-child .swiftBI_cell{margin-bottom:0;}

@@ -1,0 +1,6 @@
+.swift_page_position{
+    height:50px;line-height:50px;padding-left:20px;font-size:14px;color:#333333;
+    border-bottom:1px solid #E4E4E4;
+}
+.swift_page_position .a_code{margin-right:5px;}
+.swift_page_position>span{margin-right:5px;display:inline-block;vertical-align:middle;}

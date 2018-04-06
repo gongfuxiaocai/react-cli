@@ -1,0 +1,8 @@
+
+.swiftBI_flex{}
+
+.page_vertical_flex{position:absolute;left:0;right:0;top:0;bottom:0;}
+.page_vertical_cont{overflow:auto;padding:30px 30px 10px 30px;}
+.page_vertical_cont::-webkit-scrollbar{width:7px;}
+.page_vertical_cont::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+.page_vertical_cont::-webkit-scrollbar-track{background:#ddd;}

@@ -1,0 +1,17 @@
+@import "../theme/loader";
+
+.swift_progress{
+    display:inline-block;
+    .swift_progress_circle{
+        position:relative;
+        .front_circle {
+            stroke:@swift_primary_color;
+            transition: stroke-dashoffset .4s ease-in-out;
+            transform-origin: 50% 50%;
+            transform:rotate(-90deg);
+        }
+        .back_circle{stroke:#f7f7f7;}
+        .circle_indicator{position:absolute;left:0;right:0;text-align:center;height:40px;line-height:40px;top:50%;margin-top:-20px;font-size:30px;}
+    }
+
+}

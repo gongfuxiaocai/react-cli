@@ -1,0 +1,13 @@
+.innovate_upload-img-wrap{height: 122px;width: 188px;border-radius:12px;}
+.innovate_upload-img-wrap.innovate_paper_img01{background: url('../../../components/innovateReact/Resource/images/default_papers01.png') no-repeat;}
+.innovate_upload-img-wrap.innovate_paper_img02{background: url('../../../components/innovateReact/Resource/images/default_papers02.png') no-repeat;}
+.innovate_upload-img-wrap.innovate_paper_img03{background: url('../../../components/innovateReact/Resource/images/default_papers03.png') no-repeat;}
+.innovate_upload-img-wrap.innovate_paper_img04{background: url('../../../components/innovateReact/Resource/images/default_papers04.png') no-repeat;}
+.innovate_upload-img-wrap.innovate_paper_img05{background: #F4F5F9;}
+.innovate_upload>span{display: block;margin: 22px 0 35px 0;text-align: center;}
+.innovate_upload>button{display: block;margin: 0 auto;}
+.left_10{margin-left: 10px;}
+
+.ant-modal{
+    width: 60% !important;
+}

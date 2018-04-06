@@ -1,0 +1,43 @@
+
+.rank_top_title{display:block !important;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;padding-right:140px;}
+.ranklist_header_radio{position:absolute;right:12px;top:10px;z-index:3;}
+.swiftBI_ranklist .swiftBI_radio{background:#FAFBFC;}
+.swiftBi_rank_ul{}
+.swiftBi_rank_ul>li{padding:10px;border-bottom:1px solid #D3D3D3;}
+.swiftBi_rank_ul>li:last-child{border-bottom:0;}
+.row_title{margin-bottom:7px;}
+.row_title .swiftBI_flex_item>span{display:inline-block;vertical-align: middle;}
+.row_title_label{
+    position:relative;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;
+}
+.row_icon{text-align:right;width:30px;-webkit-box-flex:initial;box-flex:initial;margin-right:10px;}
+
+.row_title_data{
+    font-size:16px;font-weight: bold;text-align:right;
+    -webkit-box-flex:initial;box-flex:initial;width:100px;
+}
+.row_sub_title{font-size:12px;color:#aaa;margin-bottom:7px;}
+.row_compare_ele{
+    position:relative;height:12px;line-height: 12px;margin-right:10px;
+    font-size:12px;color:#aaa;border-right:1px solid #D3D3D3;padding-right:10px;
+}
+.row_compare_ele:last-child{border-right:0;}
+.row_compare_ele>div{vertical-align: top;}
+.row_compare_ele .swiftBI_cell_label{margin-right:5px;}
+.rank_title_ico{color:#A8A8B7;}
+.rank_title_ico>b,.row_compare_ico>b{
+    display:inline-block;width:8px;height:5px;vertical-align: middle;margin-left:8px;position:relative;top:-1px;
+    background:url(../Resource/images/sprite.png) no-repeat;background-position:-82px -142px;
+}
+.rank_title_ico>em{font-style: normal;font-size:12px;margin-left:5px;}
+.rank_title_ico.up{color:#D90D0D;}
+.rank_title_ico.up>b{background-position:-82px -128px;}
+.rank_title_ico.down{color:#4CB878;}
+.rank_title_ico.down>b{background-position: -82px -135px;}
+.rank_title_ico.new>b{width:22px;height:11px;background-position:-36px -152px;}
+.rank_title_ico.new>em{display:none;}
+
+.row_compare_ico.up>b{background-position:-82px -128px}
+.row_compare_ico.down>b{background-position: -82px -135px;}
+
+.rank_list_empty{display:block;text-align:center;}

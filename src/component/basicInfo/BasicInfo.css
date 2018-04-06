@@ -1,0 +1,7 @@
+.basic_info{border: 1px solid #e2e2e2;word-break: break-all; white-space: normal;}
+.basic_info li{float: left; width: 50%; height: 40px; border-bottom: 1px solid #e2e2e2; display: -webkit-flex; display: flex; display: -webkit-box; text-align: left;}
+.basic_info li.no_border{border-bottom: none;}
+.basic_info li .item{width: 33%; background: #f4f6fc; padding: 0 10px; line-height: 40px;}
+.basic_info li .text{width: 67%; padding: 0 10px; display: table; height: 100%; line-height: 1.4;}
+.basic_info li .text p{display: table-cell; vertical-align: middle;}
+.basic_info li .text .edit{display: inline-block; width: 42px; height: 18px; line-height: 16px; text-align: center; border: 1px solid #4c8dee; color: #4c8dee; font-size: 12px; margin-left: 20px; cursor: pointer;}

@@ -1,0 +1,6 @@
+.innovate_paycount{padding: 20px 0 20px 22px;}
+.innovate_paycount .innovate_paycount_d1{height: 28px;line-height: 28px;font-size: 12px;color: #959a9e;vertical-align: middle;}
+.innovate_paycount .innovate_paycount_d2{height: 32px;line-height: 32px;font-size: 24px;color: #333;vertical-align: middle;}
+.innovate_paycount .innovate_paycount_title{display: inline-block;vertical-align: middle;padding-left: 10px;}
+.innovate_paycount.line .innovate_paycount_d2{position: relative;}
+.innovate_paycount.line .innovate_paycount_d2 .thisLine{position: absolute;right: 0;top: -14px;width: 1px;height: 32px;background-color: #e4e8ec;}

@@ -1,0 +1,13 @@
+.swiftBI_mask{
+     left:0;right:0;top:0;bottom:0;
+    background:rgba(0,0,0,0.6);z-index:1000;animation:appear 0.1s ease;
+}
+@keyframes appear
+{
+    0% {opacity:0;}
+    100% {opacity:1}
+}
+.swiftBI_mask.full{position:fixed;}
+.swiftBI_mask.partial{position:absolute;}
+.swiftBI_mask.partialFixed{position:fixed;left:240px;top:70px;}
+.swiftBI_mask.transarent{background:transparent;}

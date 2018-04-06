@@ -1,0 +1,6 @@
+.clearfix2:after{ content:""; display:block; height:0; clear:both; visibility:hidden;}
+.sft_kanban {padding: 5px 0; border: 1px solid #e2e2e2; background: #fff;}
+.sft_kanban li {float: left; height: 60px; border-right: 1px solid #e2e2e2; margin: 5px 0; display: flex; display: -webkit-box; align-items: center; -webkit-box-align: center;}
+.sft_kanban li:last-child, .sft_kanban li.no_border_right {border-right: none;}
+.sft_kanban li .ico {margin: 0 10px 0 15px;}
+.sft_kanban li .con p:first-child {font-weight: bold; color: #666; margin-bottom: 2px;}

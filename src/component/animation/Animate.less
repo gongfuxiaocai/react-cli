@@ -1,0 +1,145 @@
+/*放大效果*/
+/*放大效果-进场*/
+.swift-zoom-enter{
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    animation-duration: 0.2s; animation-fill-mode: both;
+    animation-play-state: paused;
+    &.swift-zoom-enter-active{
+        animation-name: swiftZoomBigIn;
+        animation-play-state: running;
+    }
+}
+@keyframes swiftZoomBigIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*放大效果-出场*/
+.swift-zoom-leave{
+    animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    animation-duration: 0.2s;animation-fill-mode: both;
+    animation-play-state: paused;
+    &.swift-zoom-leave-active{
+        animation-name: swiftZoomBigOut;
+        animation-play-state: running;
+        pointer-events: none;
+    }
+}
+@keyframes swiftZoomBigOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+/*放大效果 end*/
+
+/*swift-fade*/
+.swift-fade-enter{
+    opacity: 0; animation-timing-function: linear;
+    animation-duration: 0.2s; animation-fill-mode: both; animation-play-state: paused;
+    &.swift-fade-enter-active{
+        animation-name: swiftFadeIn; animation-play-state: running;
+    }
+}
+@keyframes swiftFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.swift-fade-leave{
+    animation-timing-function: linear;
+    animation-duration: 0.2s;animation-fill-mode: both;animation-play-state: paused;
+    &.swift-fade-leave-active{
+        animation-name: swiftFadeOut;animation-play-state: running; pointer-events: none;
+    }
+}
+@keyframes swiftFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*swift-fade end*/
+
+/*swift-swing*/
+.swift-swing-enter{
+    animation-duration: 0.2s; animation-fill-mode: both; animation-play-state: paused;
+    &.swift-swing-enter-active{
+        animation-name: swiftSwingIn; animation-play-state: running;
+    }
+}
+@keyframes swiftSwingIn {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+}
+/*swift-swing end*/
+
+/*swift-silde-left*/
+.swift-slide-left-enter{
+    opacity:0;
+    animation-duration: 0.2s; animation-fill-mode: both; animation-play-state: paused;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    &.swift-slide-left-enter-active{
+        animation-name:swiftSlideLeftIn;animation-play-state: running;
+    }
+}
+@keyframes swiftSlideLeftIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleX(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleX(1);
+  }
+}
+.swift-slide-left-leave {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-duration: 0.2s;animation-fill-mode: both;animation-play-state: paused;
+    &.swift-slide-left-leave-active{
+        animation-name: swiftSlideLeftOut;animation-play-state: running;pointer-events: none;
+    }
+}
+@keyframes swiftSlideLeftOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleX(0.8);
+  }
+}
+/*swift-silde-left ebd*/

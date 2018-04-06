@@ -1,0 +1,89 @@
+@import "../theme/loader";
+
+button{ border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.swiftBI_button{
+    -webkit-user-select:none;user-select:none;box-sizing:border-box;
+    display:inline-block;vertical-align:middle;text-align:center;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    cursor: pointer;font-size:14px;position:relative;
+}
+.swiftBI_button.disable:before{content:none !important;}
+
+.swiftBI_button.primary{
+    background: @swift_btn_primary_bg; color: @swift_btn_primary_color;border-radius:2px;border:1px solid @swift_btn_primary_border;
+    &:after{
+        content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:inherit;
+        border:0px solid @swift_checkbox_on;opacity:0.6;
+    }
+
+    &:hover{
+        background:@swift_btn_primary_bg_active;
+    }
+    &:active{
+        background:@swift_btn_primary_bg_active;
+    }
+    &.btn_clicked{
+        &:after{animation:swift_animate_btn_active 0.4s ;}
+    }
+
+    &.disable{
+        border:1px solid @swift_btn_primary_border_disable;background:@swift_btn_primary_disable;color:@swift_btn_primary_color_disable;
+        &:after{content:none;}
+        &:hover{border:1px solid @swift_btn_primary_disable;background:@swift_btn_primary_disable;color:@swift_btn_primary_color_disable;}
+    }
+
+}
+
+.swiftBI_button.default{
+    background: @swift_btn_default_bg; color: @swift_btn_default_color;border:1px solid @swift_btn_default_border;border-radius:2px;
+    &:after{
+        content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:inherit;
+        border:0px solid @swift_checkbox_on;opacity:0.6;
+    }
+    &:hover{
+        background:@swift_btn_default_bg_hover;color:@swift_btn_default_color_hover;border:1px solid @swift_btn_default_border_hover;
+    }
+    &:active{
+        background:@swift_btn_default_bg_active;color: @swift_btn_default_color_active;border:1px solid @swift_btn_default_border_active;
+    }
+    &.btn_clicked{
+        &:after{animation:swift_animate_btn_active 0.4s ;}
+    }
+
+    &.disable{
+        background:@swift_btn_default_disable;color: @swift_btn_default_color_disable;border:1px solid @swift_btn_default_border_disable;
+        &:after{content:none;}
+    }
+}
+
+
+.swiftBI_button.primary.plaint{background:#ffffff;border:1px solid #FFA800;color:#FFA800;}
+.swiftBI_button.primary.plaint:before{content:none;}
+.swiftBI_button.primary.plaint:hover{background:#f3f9fe;border:1px solid #FFA800;color:#FFA800;}
+.swiftBI_button.primary.plaint:active{background:#FFA800;border:1px solid #FFA800;color:#ffffff;}
+
+
+.swiftBI_button.a_code{color:@swift_btn_a_code_color;font-style:normal;}
+.swiftBI_button.a_code:hover{text-decoration: underline;}
+.swiftBI_button.a_code:active{text-decoration: underline;color:@swift_btn_a_code_color_active;}
+.swiftBI_button.a_code.disable{background:transparent !important; color:@swift_btn_a_code_color_disable !important;}
+
+.swiftBI_button.a_code.border_rgt{border-right:1px solid #d9dadc;padding:0 12px;}
+.swiftBI_button.a_code.border_rgt:last-child{border-right:0;padding-right:0;}
+
+.swiftBI_button.size_small{height:@swift_btn_size_small_height;line-height:@swift_btn_size_small_height - 2;padding:0 20px;}
+.swiftBI_button.size_medium{height:@swift_btn_size_medium_height;line-height:@swift_btn_size_medium_height - 2;padding:0 20px;}
+
+.swiftBI_button.size_small.width_protect{width:88px;padding:0;}
+.swiftBI_button.size_medium.width_protect{width:90px;padding:0;}
+
+@keyframes swift_animate_btn_active {
+  to {
+    opacity: 0;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-width: 6px;
+  }
+}

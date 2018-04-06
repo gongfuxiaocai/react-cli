@@ -1,0 +1,71 @@
+@import "../theme/loader";
+
+.swiftBI_table{
+    width:100%;border-collapse:collapse;
+    .anticon-frown-o:before{content:none;}
+}
+.swiftBI_table th{
+    color:#000000;font-size:14px;
+    font-weight:normal;text-align: left;-webkit-user-select:none;user-select:none;
+}
+
+.swiftBI_table td{text-align: left;color:#000000;}
+
+
+.swiftBI_table tr{background:#fff;}
+.swiftBI_table tr.tr_no_sort{background:#EEF5FD !important;}
+.swiftBI_table tr:nth-child(even){background:@swift_table_tr_bg_even;}
+.swiftBI_table tr:hover{background: @swift_table_tr_bg_hover;}
+.swiftBI_table .rank{cursor:pointer;}
+.swiftBI_table .rank>span{position:relative;}
+.swiftBI_table .rank>span:after{
+    content:'';position:absolute;right:-20px;top:50%;margin-top:-7px;width:12px;height:14px;
+    background:url(../Resource/images/ico_rank.png) 50% 50% no-repeat;
+}
+.swiftBI_table .rank:last-child{padding-right:36px;}
+.swiftBI_table .rank>span:hover:after{background:url(../Resource/images/ico_rank2.png) 50% 50% no-repeat;}
+.swiftBI_table .rank.asc>span:after{background:url(../Resource/images/ico_up.png) 50% 50% no-repeat;}
+.swiftBI_table .rank.desc>span:after{background:url(../Resource/images/ico_down.png) 50% 50% no-repeat;}
+.swiftBI_table_wraper {position:relative;border:1px solid @swift_table_border_color;}
+.swiftBI_table.ant-table-wrapper{border:1px solid @swift_table_border_color;}
+.swiftBI_table .ant-table-tbody > tr:last-child > td{border-bottom:0;}
+.swiftBI_table .ant-table-placeholder{border-bottom:0;}
+.swiftBI_table .ant-table-thead > tr > th{background:none;}
+.swiftBI_table_wraper .tbody_no_data{text-align:center;line-height:140px;height:140px;color:#BFBFBF;}
+
+.swiftBI_table_loading_wrap{
+    position:absolute;left:0;right:0;top:40px;bottom:0;background:#ffffff;
+    -webkit-box-align:center;-webkit-box-pack:center;
+    box-align:center;box-pack:center;
+}
+.swiftBI_table{
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{padding:9px;}
+    .ant-table-tbody > tr > td{border-bottom:0;}
+    .ant-table-thead > tr > th:first-child, .ant-table-tbody > tr > td:first-child{padding-left:14px;}
+    .ant-table-thead > tr > th:last-child, .ant-table-tbody > tr > td:last-child{text-align:right;padding-right:14px;}
+    .ant-table-bordered .ant-table-body > table{border:0;}
+    .ant-table-bordered .ant-table-tbody > tr > td:last-child{border-right:0;}
+    thead tr{background:@swift_table_thead_bg;}
+    thead tr:hover{background:@swift_table_thead_bg;}
+}
+
+//允许动画效果时，必须把表格默认属性table-row table-cell改变，否则会有一个最小宽/高度存在 影响动画的实际效果
+.swiftBI_table.animation_enable{
+    td,th{display:inline-block;padding:10px 8px;}
+    th{vertical-align: text-bottom;}
+    td{vertical-align: middle;}
+    tr{display:block;}
+}
+
+// .ant-table-body::-webkit-scrollbar{height:7px;}
+// .ant-table-body::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+// .ant-table-body::-webkit-scrollbar-track{background:#ddd;}
+//
+//
+// .ant-table-body::-webkit-scrollbar{width:7px;}
+// .ant-table-body::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+// .ant-table-body::-webkit-scrollbar-track{background:#ddd;}
+//
+// .ant-table-body-inner::-webkit-scrollbar{width:7px;}
+// .ant-table-body-inner::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+// .ant-table-body-inner::-webkit-scrollbar-track{background:#ddd;}

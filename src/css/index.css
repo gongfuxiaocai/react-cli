@@ -1,0 +1,133 @@
+.left_10{margin-left: 10px;}
+
+.page_loading{
+    width: 110px;
+    height: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -38px 0 0 -55px;
+}
+.page_loading .ant-spin-text{
+    margin-top: 16px;
+}
+
+.innovate_navigator{
+    background: #2C303D; position: fixed; left: 0; top: 0; bottom: 0; z-index: 999;
+    overflow-y:auto;overflow-x:hidden;width:240px;-webkit-user-select:none;user-select:none;
+}
+
+/*错误页面*/
+.page_error_404{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -500px;
+    text-align: center;
+    background: url('../images/error/404.gif') center/1000px 500px no-repeat;
+}
+.page_error_503{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -500px;
+    text-align: center;
+    background: url('../images/error/503.gif') center/1000px 500px no-repeat;
+}
+.page_error_content{
+    position: absolute;
+    bottom: 86px;
+    width: 100%;
+}
+.error_operation{
+    position: absolute;
+    bottom: 62px;
+    width: 100%;
+    color: #4c8dee;
+    text-decoration: underline;
+}
+.error_operation span{
+    cursor: pointer;
+}
+.page_error_content h3{
+    font-size: 28px;
+}
+.page_error_content p{
+    font-size: 18px;
+}
+.error_refresh{
+    margin-right: 12px;
+}
+.error_logout{
+    margin-top: 8px;
+    color: #4c8dee;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*错误页面 end*/
+
+/*操作提示框*/
+.operation_tip{
+    padding: 35px 0;
+    text-align: center;
+}
+.operation_tip div{
+    position: relative;
+    height: 80px;
+}
+.operation_tip p{
+    font-size: 16px;
+}
+.operation_tip .icon-tip{
+    font-size: 80px;
+    position: absolute;
+    top: -20px;
+    left: 210px;
+    color: #4c8dee;
+}
+
+/*退出按钮*/
+.page_logout{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: #4c8dee;
+}
+
+/*无权访问页面*/
+.auth_page{
+    margin-top: 120px;
+    text-align: center;
+}
+.child_page_error{
+    padding-top: 120px;
+    text-align: center;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    left: 220px;
+    background: #fff;
+    z-index: 1000;
+}
+.auth_page .icon-tip:before,
+.child_page_error .icon-tip:before {
+    color: #4c8dee;
+    font-size: 120px;
+}
+.auth_page h3,
+.child_page_error h3{
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 300;
+}
+.auth_page p,
+.child_page_error p{
+    color: #999;
+}

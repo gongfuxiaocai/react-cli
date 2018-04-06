@@ -1,0 +1,57 @@
+@import "../theme/loader";
+
+input{ border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.swift_input_wrap{position:relative;display:inline-block;box-sizing:border-box;}
+.swiftBI_input{
+    transition:all 0.3s;vertical-align: middle;color:@swift_input_color;box-sizing:border-box;
+    background:@swift_input_bg;color:#2C405A;font-size: 14px;
+    /*大小尺寸*/
+    &.small{
+        height: @swift_input_size_small_height;line-height:@swift_input_size_small_height;
+        width:@swift_input_size_small_width;padding:0 6px;
+    }
+    &.medium{
+        height: @swift_input_size_medium_height;line-height:@swift_input_size_medium_height;
+        width:@swift_input_size_medium_width;padding:0 6px;
+    }
+    &.big{
+        height: @swift_input_size_big_height;line-height:@swift_input_size_big_height;
+        width:@swift_input_size_big_width;padding:0 6px;
+    }
+
+    /*模式*/
+    &.primary{
+        border: 1px solid @swift_input_border;
+        &:focus{border-color:@swift_primary_color;box-shadow: 0 0 0px 1px @swift_primary_color;}
+        &.error{border: 1px solid @swift_error_color;}
+        &.error:focus{border-color:@swift_input_error_border;box-shadow: 0 0 0px 1px @swift_input_error_border;}
+    }
+
+}
+
+// .swiftBI_input.big{height: @swift_input_size_small_big;line-height:@swift_input_size_small_big;font-size:14px;}
+
+
+.swiftBI_input_wrap.date_range{
+    cursor:pointer;
+    &:after{
+        content:" ";position:absolute;right:0;top:50%;margin-top:-15px;width:30px;height:30px;
+        background: url(../Resource/images/ico_date.png) 50% 50% no-repeat;
+    }
+    .swiftBI_input{
+        width:180px;cursor: pointer;-webkit-appearance:none;
+    }
+}
+
+//.antDatePicker .ant-calendar-picker-icon:after{
+//	content:" ";position:absolute;right:-7px;top:50%;margin-top:-15px;width:30px;height:30px;
+//    background: url(../Resource/images/ico_date.png) 50% 50% no-repeat;
+//}
+
+/*提示信息*/
+.swiftBI_input_msg{
+    color:@swift_input_tip_color;
+    &.error{color:@swift_error_color;}
+    &.right{display:inline-block;margin-left:15px;}
+    &.bottom{position:absolute;bottom:-20px;left:0;}
+}

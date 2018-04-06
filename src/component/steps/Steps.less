@@ -1,0 +1,19 @@
+@import "../theme/loader";
+
+.innovate_steps{display:table;width:100%;}
+.steps_item{display:table-cell;}
+.primary .steps_item{position:relative;padding-top:28px;border-top:2px solid #DDDDDD;text-align:center;color:#DDDDDD;font-size:14px;}
+.primary .steps_item:before{content:"";position:absolute;left:50%;margin-left:-12px;top:-12px;width:24px;height:24px;border-radius:50%;background:#DDDDDD;}
+.primary .steps_item .setps_num{position:absolute;left:50%;top:-10px;margin-left:-4px;color:#ffffff;}
+
+.single .steps_item{position:relative;padding-top:28px;text-align:center;color:#C0C6CD;font-size:14px;}
+.single .steps_item:before{content:"";position:absolute;left:50%;margin-left:-13.5px;top:-13.5px;width:27px;height:27px;border-radius:50%;background:#B8E3FD;}
+.single .steps_item .setps_num{position:absolute;left:50%;top:-10px;margin-left:-4px;color:#ffffff;}
+
+.primary .steps_item.on{border-color:@swift_steps_on;}
+.primary .steps_item.on:before{background:@swift_steps_on;}
+.primary .steps_item.on .setps_num{color:#ffffff;}
+
+.single .steps_item.on{color: #2B3F5B;}
+.single .steps_item.on:before{background:@swift_steps_on;}
+.single .steps_item.on .setps_num{color:#ffffff;}

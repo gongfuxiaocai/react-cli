@@ -1,0 +1,22 @@
+.pagination_box{
+    margin-top: 12px;
+}
+.innovate_cont_dom .filter_bd{
+    padding: 20px;
+}
+.operation_btn_box .operation_btn_box{
+    margin-right: 12px;
+}
+.operation_btn_blue{
+    color: #4c8dee;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.operation_btn_gray{
+    margin-left: 6px;
+    color: #999;
+    cursor: default;
+}
+.error_color_red{
+    color: red;
+}

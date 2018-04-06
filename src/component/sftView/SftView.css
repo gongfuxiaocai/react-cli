@@ -1,0 +1,5 @@
+
+.gl_box{border: 1px solid #e2e2e2;text-align: center;height:350px;width:300px;margin: 40px 0 0 28px;padding-left: 31px;padding-right: 31px;}
+.gl_box .logo_style{display: inline-block;margin-top:40px;background-size: 80px 80px;text-align: center;border-radius: 4px;width:80px;height:80px;}
+.gl_box .title_style{font-size:16px;color:#333333;margin: 15px 0 12px;}
+.gl_box .text_style{color: #999999;text-align: left;font-size: 14px;line-height: 24px;height:105px;}

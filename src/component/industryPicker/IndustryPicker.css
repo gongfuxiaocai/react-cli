@@ -1,0 +1,107 @@
+/* 行业选择 begin */
+
+.industryPicker {
+    margin: 20px 30px 50px;
+}
+
+.industryPicker .tips {
+    /* 温馨提示 */
+    margin-bottom: 30px;
+}
+
+.industryPicker .seletedType {
+    /* 已选择的行业 */
+    margin-top: 35px;
+}
+
+.industryPicker .seletedType span:first-child {
+    color: #999999;
+}
+
+.industryPicker .allIndustry {
+    /* 中间 */
+    height: 322px;
+}
+
+.industryPicker .allIndustry .industryWrapper {
+    width: 221px;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+    overflow: auto;
+}
+
+.industryPicker .allIndustry .industryWrapper:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.industryPicker .allIndustry .industryWrapper ul {
+    padding: 2px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.industryPicker .allIndustry .industryWrapper ul li {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    /* margin-bottom: 6px; */
+    cursor: pointer;
+    -webkit-transition: background-color .1s ease-out;
+    -moz-transition: background-color .1s ease-out;
+    transition: background-color .1s ease-out;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.industryPicker .allIndustry .industryWrapper ul li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.industryPicker .allIndustry .industryWrapper ul li:hover {
+    background-color: #EEEEEE;
+}
+
+.industryPicker .allIndustry .industryWrapper:not(:last-child) ul li.selectedLi:after {
+    content: url('../Resource/images/industryPicker_arrow.png');
+    position: absolute;
+    right: 10px;
+}
+
+.industryPicker .selectedLi {
+    background-color: #EEEEEE;
+}
+
+.industryPickerWrapper .swiftBI_popup_cont.animate {
+    /* 控制弹窗的y轴位置 */
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+}
+
+/* 滚动条样式 */
+.industryPicker .allIndustry .industryWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+
+.industryPicker .allIndustry .industryWrapper::-webkit-scrollbar-thumb {
+    background: rgba(153,153,153,0.5);
+    border-radius: 5px;
+}
+.industryPicker .allIndustry .industryWrapper::-webkit-scrollbar:horizontal { /* 横向滚动条样式 */
+    height: 4px;
+}
+
+.industryPicker .allIndustry .industryWrapper::-webkit-scrollbar-track {
+    background: #DDDDDD;
+}
+
+
+/* 行业选择 end */

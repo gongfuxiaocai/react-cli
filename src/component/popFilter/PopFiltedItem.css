@@ -1,0 +1,4 @@
+.swiftBI_popFilter_item{
+    display: inline-block;cursor:pointer; height: 24px; line-height: 24px; padding: 0 32px 0 5px; border: 1px solid #D9DADC;
+    background: #fff url(../Resource/images/ico_clear.png) right center no-repeat; margin: 0 5px 4px 5px;
+}

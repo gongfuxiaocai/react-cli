@@ -1,0 +1,14 @@
+.innovate_checkbox_group{display:inline-block;vertical-align:middle;}
+.innovate_checkbox{position:relative;display:inline-block;vertical-align:middle;cursor:pointer;}
+.innovate_checkbox:not(:last-child){margin-right:15px;}
+.innovate_checkbox>i{
+    display:inline-block;vertical-align:middle;width:16px;height:16px;
+    border:1px solid #E2E2E2;margin-right:10px;border-radius:2px;background:#fff;
+}
+.innovate_checkbox>span{display:inline-block;vertical-align:middle;font-size:14px;line-height:16px;}
+
+.innovate_checkbox.on>i {border-color:#7E1291;background:url(../Resource/images/check_box_on.png) 45% 50% no-repeat,#fff;}
+
+.innovate_checkbox.disable{cursor:not-allowed;color:#DDDDDD;}
+.innovate_checkbox.disable i{background:#F7F7F7;}
+.innovate_checkbox.on.disable i{border-color:#E2E2E2;background:url(../Resource/images/icon_check_on_disable.png) 45% 50% no-repeat,#F7F7F7;}

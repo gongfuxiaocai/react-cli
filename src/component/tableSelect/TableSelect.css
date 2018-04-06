@@ -1,0 +1,16 @@
+.swiftBI_table_select{padding:0 20px;height:48px;line-height:48px;text-align:center;border-left:1px solid #D3D3D3;position:relative;cursor:pointer;}
+.swiftBI_table_select .arrow_down{
+    display:inline-block;width:10px;height:7px;margin-left:10px;
+    vertical-align: middle;background:url(../Resource/images/arrow_down.png) no-repeat;
+}
+.swiftBI_table_select em{font-style:normal;}
+.swiftBI_table_select.float_right{float:right;}
+.swiftBI_table_select:hover .swiftBI_table_option{display:block;}
+.swiftBI_table_option{display:none;position:absolute;left:50%;top:44px;z-index:1;width:100px;margin-left:-50px;border:1px solid #d3d3d3;background:#fff;}
+.swiftBI_table_option:before{
+    content:"";position:absolute;left:61px;top:-8px;width:13px;height:13px;
+    border-left:1px solid #d3d3d3;border-top:1px solid #d3d3d3;background:#ffffff;
+    transform:rotate(45deg);-webkit-transform:rotate(45deg);
+}
+.table_option_list{height:38px;line-height: 38px;text-indent:10px;position:relative;z-index:1;}
+.table_option_list:hover{background: rgba(0, 0, 0, 0.04);}

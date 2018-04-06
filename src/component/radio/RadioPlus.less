@@ -1,0 +1,87 @@
+@import "../theme/loader";
+.swiftBI_radio_plus_wrap{display:inline-block;}
+
+.swiftBI_radio_plus{
+    position:relative;display:inline-block;vertical-align:middle;
+    margin-right:50px;border-radius:3px;cursor:pointer;-webkit-user-select:none;user-select:none;
+    &:last-child{margin-right:0;}
+}
+
+.swiftBI_radio_plus.primary{
+    span{display:inline-block;vertical-align:middle; color: #333333;}
+    &:hover>i:after{visibility:visible;opacity:1;}
+    i{
+        display:inline-block;position:relative;margin-right:10px;
+        vertical-align:middle;border-radius:50%;border:1px solid #E2E2E2;
+        &:before{
+            content:"";position:absolute;left:50%;top:50%;border-radius:50%;
+            transform:scale(0);
+            transition: all 0.2s cubic-bezier(0.12,0.4,0.29,1.46) 0.1s;
+        }
+        &:after{
+            content:"";position:absolute;border:1px solid @swift_radio_primary_color;
+            top:-1px;right:-1px;bottom:-1px;left:-1px;border-radius:50%;visibility: hidden;
+        }
+    }
+    &.on i{
+        border-color:@swift_radio_primary_color;
+        &:before{
+            transform:scale(1);
+            background:@swift_radio_primary_color;
+        }
+        &:after{
+            animation:swift_animate_check 0.36s ease-in-out;
+        }
+    }
+    &.disable{
+        cursor:not-allowed;
+        i{border-color:#d9d9d9;background:#f5f5f5;}
+        &:hover>i:after{content:none;}
+        span{color:rgba(0, 0, 0, 0.25);}
+        &.on i:before{background:#ccc;}
+    }
+    &.size_small{
+        i{width:18px;height:18px;}
+        i:before{width:10px;height:10px;margin-top:-5px;margin-left:-5px;}
+        span{height: 30px; line-height: 30px;}
+    }
+
+    &.size_big{
+        vertical-align:top;margin-right:0;
+        span{display:block; height: 48px; line-height: 48px;width:80px;text-align:center;font-size:16px;}
+    }
+}
+
+.swiftBI_panel_title .swiftBI_radio_plus.primary.size_big span{border-right:1px solid #D9DADC;}
+
+
+.swiftBI_radio_plus.text_only{
+    margin-right:20px;color:#63676B;border-radius:0;
+    &.on{color:@swift_radio_text_only_color;}
+    &.size_small span{height: 30px; line-height: 30px;}
+}
+
+.swiftBI_radio_plus.text_line{
+    margin-right:20px;border-radius:0;box-sizing:border-box;color:#333333;
+    &.on{color:@swift_primary_color;position:relative;text-decoration: underline;}
+
+    &.size_small span{height: initial; line-height: initial;}
+}
+
+
+.swiftBI_radio_plus.button{
+    margin-right:10px;color:#999999;border-radius:2px;box-sizing:border-box;padding:0 10px;
+    &.on{color:#fff;background:@swift_radio_button_color;}
+    &.size_small span{height:26px;line-height:26px;}
+}
+
+@keyframes swift_animate_check {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}

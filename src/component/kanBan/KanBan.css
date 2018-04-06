@@ -1,0 +1,41 @@
+.swiftBi_kanban_head .swiftBI_icon_tip{margin-left:10px;}
+.swiftBI_panel_body.swiftBi_kanban_cont{margin:0;}
+.swiftBi_kanban_cont>.swiftBI_flex{-webkit-box-align:center;box-align:center;}
+.swiftBi_kanban_sub_title{color:#878787;font-size:14px;margin-bottom:18px;}
+.swiftBi_kanban_data{font-size:36px;color:#000;margin-bottom:18px;}
+.swiftBi_kanban_compare_ele {padding-right:14px;position:relative;}
+.swiftBi_kanban_compare_ele:after{content:"";position:absolute;top:50%;right:0;margin-top:-8px;height:16px;width:1px;background:#ddd;}
+.swiftBi_kanban_compare .swiftBI_icon_tip{margin-left:8px;}
+.swiftBi_kanban_compare_ele:last-child{padding-right:0;}
+.swiftBi_kanban_compare_ele:last-child:after{content:none;}
+.swiftBi_kanban_compare .swiftBI_cell_label{margin-right:6px;color:#aaa;}
+.swiftBi_kanban_compare .swiftBI_cell{margin-right:14px;}
+.swiftBi_kanban_compare .swiftBI_cell:last-child{margin-right:0;}
+.swiftBi_kanban_compare .swiftBi_cell_body>span{display:inline-block;vertical-align: middle;}
+.compare_icon{
+    display:inline-block;width:10px;height:13px;margin-right:4px;
+    background:url(../Resource/images/sprite.png);
+}
+.compare_icon.down{
+    background-position:-48px -13px;
+}
+.compare_icon.up{
+    background-position:-36px -13px;
+}
+.swiftBi_kanban_cont_inner>.swiftBI_flex_item{padding:0 20px;position:relative;top:5px;}
+.swiftBi_kanban_cont_inner>.swiftBI_flex_item:after{content:"";position:absolute;right:0;height:100px;width:1px;background:#ddd;top:50%;margin-top:-50px;}
+.swiftBi_kanban_cont_inner>.swiftBI_flex_item:last-child:after{content:none;}
+.swiftBi_kanban_list>div:last-child{margin-bottom:0;}
+.kanban_red{color:#D90D0D;}
+.kanban_green{color:#4CB878;}
+.swiftBi_kanban_head>img{width:21px;height:24px;display: inline-block;vertical-align:middle;margin-right:10px;}
+
+.swiftBi_kanban_sub_title>span{display:inline-block;vertical-align: middle;}
+.swiftBi_kanban_sub_title>img{display:inline-block;vertical-align: middle;margin-right:10px;}
+
+.swiftBI_kanban.theme_blue{position:relative;}
+.swiftBI_kanban.theme_blue:before{content:"";position:absolute;left:-1px;right:-1px;top:0;height:4px;background:#5D9CEC;}
+.swiftBI_kanban.theme_blue .swiftBi_kanban_data{color:#5D9CEC;}
+
+.swiftBI_kanban.theme_blue .swiftBi_kanban_sub_title{font-size:16px;color:#666;}
+.swiftBI_kanban.theme_blue .swiftBi_kanban_data{font-size:40px;}

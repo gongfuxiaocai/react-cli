@@ -1,0 +1,38 @@
+button{ border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.swiftBI_button{
+    -webkit-user-select:none;user-select:none;box-sizing:border-box;
+    display:inline-block;vertical-align:middle;text-align:center;
+    cursor: pointer;font-size:14px;position:relative;overflow:hidden;
+}
+.swiftBI_button.disable{}
+.swiftBI_button.disable:before{content:none !important;}
+
+.swiftBI_button.primary{background: #73228c; color: #FFFFFF;border-radius:2px;border:1px solid #73218B;}
+.swiftBI_button.primary:hover{background:#771189;color:#FFFFFF;}
+.swiftBI_button.primary:active{background:#6c0e7c;color:#FFFFFF;}
+.swiftBI_button.primary.disable{border:1px solid #FAFAFA;background:#FAFAFA;color:#cccccc;}
+.swiftBI_button.primary.disable:hover{border:1px solid #FAFAFA;background:#FAFAFA;color:#cccccc;}
+
+.swiftBI_button.primary.plaint{background:#ffffff;border:1px solid #FFA800;color:#FFA800;}
+.swiftBI_button.primary.plaint:before{content:none;}
+.swiftBI_button.primary.plaint:hover{background:#f3f9fe;border:1px solid #FFA800;color:#FFA800;}
+.swiftBI_button.primary.plaint:active{background:#FFA800;border:1px solid #FFA800;color:#ffffff;}
+
+.swiftBI_button.default{background: #ffffff; color: #000000;border:1px solid #BBBBBB;border-radius:2px;}
+.swiftBI_button.default:hover{background:#FAFAFA;color: #000000;border:1px solid #BBBBBB;}
+.swiftBI_button.default:active{background:#F1F1F1;color: #323232;border:1px solid #BBBBBB;}
+.swiftBI_button.default.disable{background:#F8F8FA;color: #cccccc;border:1px solid #ECECEC;}
+
+.swiftBI_button.a_code{color:#5D9CEC;font-style:normal;}
+.swiftBI_button.a_code:hover{text-decoration: underline;}
+.swiftBI_button.a_code:active{text-decoration: underline;color:#416da5;}
+.swiftBI_button.a_code.disable{background:transparent !important; color:#DDDDDD !important;}
+
+.swiftBI_button.a_code.border_rgt{border-right:1px solid #d9dadc;padding:0 12px;}
+.swiftBI_button.a_code.border_rgt:last-child{border-right:0;padding-right:0;}
+
+.swiftBI_button.size_small{height:32px;line-height:30px;padding:0 20px;}
+.swiftBI_button.size_medium{height:36px;line-height:34px;padding:0 20px;}
+
+.swiftBI_button.size_small.width_protect{width:88px;padding:0;}
+.swiftBI_button.size_medium.width_protect{width:90px;padding:0;}

@@ -1,0 +1,9 @@
+.innovate_steps{display:table;width:100%;}
+.steps_item{display:table-cell;}
+.steps_item{position:relative;padding-top:28px;border-top:2px solid #DDDDDD;text-align:center;color:#DDDDDD;font-size:14px;}
+.steps_item:before{content:"";position:absolute;left:50%;margin-left:-12px;top:-12px;width:24px;height:24px;border-radius:50%;background:#DDDDDD;}
+.steps_item .setps_num{position:absolute;left:50%;top:-10px;margin-left:-4px;color:#ffffff;}
+
+.steps_item.on{border-color:#73228c;}
+.steps_item.on:before{background:#73228c;}
+.steps_item.on .setps_num{color:#ffffff;}

@@ -1,0 +1,46 @@
+.swiftBI_search_bar{
+    position:relative;display:inline-block;vertical-align:middle;
+    border:1px solid  #D9DADC;height:30px;line-height:28px;
+}
+.search_bar_outer_input_wrap{padding-right:30px;}
+.swiftBI_search_bar.size_small{width:160px;}
+.swiftBI_search_bar.size_medium{width:210px;}
+.search_bar_outer_input_wrap>input{height:28px;text-indent:10px;width:100%;background:#ffffff;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.search_bar_outer_input_wrap>input:read-only{cursor:pointer;}
+.search_bar_outer_input_wrap>i{cursor:pointer;}
+.swiftBI_search_bar .swiftBI_icon{
+    position:absolute;right:3px;top:1px;
+    font-size:23px;color:#6D6D6D;
+}
+.search_bar_panel{position:absolute;margin-top:31px;width:450px;z-index:1001;}
+.search_bar_panel.align_bottom_left{top:-3px;left:-1px;}
+.search_bar_panel.align_bottom_right{top:-3px;right:-1px;}
+.search_bar_panel.align_top_left{bottom:28px;left:-1px;}
+.search_bar_panel.align_top_right{bottom:28px;right:-1px;}
+
+.swiftBI_search_bar .swiftBI_panel.search_bar_panel{border:1px solid #D9DADC;}
+.swiftBI_search_bar .swiftBI_panel .swiftBI_panel_title{height:40px;line-height:40px;}
+.search_bar_panel .swiftBI_panel_title{padding:0 10px;}
+.search_bar_panel .swiftBI_panel_title .search_bar_input_wrap{text-align:right;}
+.search_bar_panel .swiftBI_panel_title .search_bar_input_wrap .swiftBI_button {margin-left:10px;}
+.search_bar_panel .swiftBI_panel_body{overflow:auto;height:180px;margin:0 0 0 10px;}
+.search_bar_panel .swiftBI_panel_body::-webkit-scrollbar{width:7px;}
+.search_bar_panel .swiftBI_panel_body::-webkit-scrollbar-thumb{background:rgba(153,153,153,0.5);border-radius:5px;}
+.search_bar_panel .swiftBI_panel_body::-webkit-scrollbar-track{background:#ddd;}
+
+.search_bar_res{padding:10px 10px 10px 0;}
+.search_bar_res li{text-indent:10px;height:32px;line-height:32px;cursor:pointer;}
+.search_bar_res li:hover{background:#FEF1DC;}
+.search_bar_pager_wrap{padding-right:10px;text-align:right;}
+.search_bar_pager{width:12px;height:16px;display:inline-block;vertical-align:middle;margin-right:12px;cursor:pointer;}
+
+.search_bar_pager.prev{background:url(../Resource/images/search_bar_prev.png) no-repeat;}
+.search_bar_pager.prev.disable{background:url(../Resource/images/search_bar_prev_disable.png) no-repeat;cursor:not-allowed;}
+
+.search_bar_pager.next{background:url(../Resource/images/search_bar_next.png) no-repeat;}
+.search_bar_pager.next.disable{background:url(../Resource/images/search_bar_next_disable.png) no-repeat;cursor:not-allowed;}
+
+/*.swiftBI_search_bar .bar_ico_search:hover,.swiftBI_search_bar.on .bar_ico_search{
+    background:url(../Resource/images/ico_search_on.png) 50% 50% no-repeat;
+    background-size:cover;
+}*/

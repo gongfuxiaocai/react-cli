@@ -1,0 +1,23 @@
+input{ border: none; outline: none; padding: 0; margin: 0; background: transparent;}
+.swiftBI_input_wrap{position:relative;display:inline-block;box-sizing:border-box;}
+.swiftBI_input{vertical-align: middle;border: 1px solid #e7e7eb;color:#000000;text-indent:10px;box-sizing:border-box;background:#fff;}
+.swiftBI_input:focus {border-color:#73228c;}
+
+.swiftBI_input.medium{height: 32px;line-height:32px;}
+.swiftBI_input.small{height: 28px;line-height:28px;}
+.swiftBI_input.big{height: 46px;line-height:46px;font-size:14px;}
+
+.swiftBI_input.primary{width:180px;}
+
+.swiftBI_input_wrap.date_range{cursor:pointer;}
+.swiftBI_input_wrap.date_range:after{
+    content:" ";position:absolute;right:0;top:50%;margin-top:-15px;width:30px;height:30px;
+    background: url(../Resource/images/ico_date.png) 50% 50% no-repeat;
+}
+.swiftBI_input_wrap.date_range .swiftBI_input{
+    width:180px;cursor: pointer;-webkit-appearance:none;
+}
+/*.antDatePicker .ant-calendar-picker-icon:after{*/
+	/*content:" ";position:absolute;right:-7px;top:50%;margin-top:-15px;width:30px;height:30px;*/
+    /*background: url(../Resource/images/ico_date.png) 50% 50% no-repeat;*/
+/*}*/
