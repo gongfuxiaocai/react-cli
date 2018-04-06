@@ -12,11 +12,7 @@ class ListModule extends Component {
 
         this.state = {
             searchData: this.props.searchData || {},
-            url: this.props.fetch,
 
-            showLoading: false,
-            thData: this.props.thData || [],
-            bodyData: this.props.bodyData || [],
             canSelect: this.props.canSelect || false,
             rowSelection: {
                 type: 'checkbox',//checkbox|radio
@@ -107,7 +103,7 @@ class ListModule extends Component {
         } = this.state;
 
         const _rowSelection = canSelect ? rowSelection : null;
-
+        const { HomeContext } = require( 'Contexts/' + this.props.context );
         return(
             <div>
                 <HomeContext.Consumer>
@@ -117,8 +113,8 @@ class ListModule extends Component {
                                 <Fragment>
                                     <Table
                                         style={ { border:'1px solid #eaecef' } }
-                                        isLoading = { showLoading }
-                                        thData = { thData }
+                                        isLoading = { data.showLoading }
+                                        thData = { data.thData }
                                         bodyData = { data.bodyData }
                                         rowSelection = { _rowSelection }
                                     />
