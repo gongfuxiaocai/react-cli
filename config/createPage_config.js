@@ -1,8 +1,7 @@
 const dataSource = {
     //交互接口
-    list: {
-        request: "",
-        search: [
+    search: {
+        list: [
             {
                 label: "",
                 type: "",   //input, select, date, doubleDate, upload, transfer
@@ -15,10 +14,6 @@ const dataSource = {
             labelWidth: "",
             contentWidth: ""
         },
-        columns: [
-            { title: "", dataKey: "", width: "" },
-        ],
-        selectRow: true,
     },
     add: {
         request: "",

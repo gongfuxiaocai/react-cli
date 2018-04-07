@@ -17,6 +17,7 @@ class CreatePage extends Component {
         super( props );
         this.state = {
             searchData: {},
+            checkData: [],
 
             popShow: false,
             popTitle: "",
@@ -40,37 +41,49 @@ class CreatePage extends Component {
 
     }
 
-    handleCheckRow = ( checkedRows ) => {
+    handleChangeBodyData = ( getBodyData, data ) => {
+        const { searchData } = this.state;
+        const requestData = Object.assign( {}, searchData, data );
 
+        this.setState( {
+            searchData: requestData
+        } );
+
+        getBodyData( requestData );
     };
+
 
     render() {
         const {
-            searchData,
             popShow, popTitle, popContent, popFooter, toastShow, toastContent
         } = this.state;
-        const { list } = this.props.dataSource;
-        const { request, bodyData } = list;
+        const { canSelect, context, search } = this.props;
+
+        const { Context } = require( 'Contexts/' + this.props.context );
+
         return(
             <div>
-                <div className="page_search">
-                    <SearchModule
+                <Context.Consumer>
+                    <div className="page_search">
+                        <SearchModule
+                            searchData={ search }
+                            getSearchData={ this.handleChangeBodyData.bind( this, data.getBodyData ) }
+                        />
+                    </div>
 
-                    />
-                </div>
+                    <div className="page_options">
 
-                <div className="page_options">
+                    </div>
 
-                </div>
-
-                <div className="page_content">
-                    <ListModule
-                        searchData={ searchData }
-                        fetch={ request }
-                        bodyData={ bodyData }
-                        getCheckData={ this.handleCheckRow }
-                    />
-                </div>
+                    <div className="page_content">
+                        <ListModule
+                            canSelect={ canSelect }
+                            context={ context }
+                            getPageData={ this.handleChangeBodyData.bind( this, data.getBodyData ) }
+                            getCheckData={ this.handleCheckRow }
+                        />
+                    </div>
+                </Context.Consumer>
 
                 {
                     popShow && <Popup
@@ -101,7 +114,6 @@ class CreatePage extends Component {
             </div>
         )
     }
-
 
 }
 

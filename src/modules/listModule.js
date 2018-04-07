@@ -11,8 +11,6 @@ class ListModule extends Component {
         super( props );
 
         this.state = {
-            searchData: this.props.searchData || {},
-
             canSelect: this.props.canSelect || false,
             rowSelection: {
                 type: 'checkbox',//checkbox|radio
@@ -28,62 +26,45 @@ class ListModule extends Component {
         }
     }
 
-    componentDidMound() {
-        this.getBodyData();
-    }
-
-    componentWillReceiveProps( nextProps ) {
-        if( nextProps.searchData !== this.state.searchData ) {
-            this.setState( {
-                searchData: nextProps.searchData,
-                currentPage: 1,
-            }, () => {
-                this.getBodyData();
-            } )
-        }
-    }
-
-    getBodyData( callback ) {
-        const { searchData, fetch, pageSize, currentPage } = this.state;
-        const requestData = Object.assign( {}, searchData );
-        requestData.pageSize = pageSize;
-        requestData.currentPage = currentPage;
-
-        if( !!callback ) {
-            callback( searchData )
-        }
-    }
-
-    handleChangePage = ( contextGetBodyData, currentPage, pageSize ) => {
-        const { rowSelection } = this.state;
-        rowSelection.selectedRowKeys = [];
-        const checkData = [];
-
-        this.setState( {
-            currentPage,
-            checkData,
-            rowSelection
-        }, () => {
-            this.getBodyData( contextGetBodyData );
-        } );
+    handleChangePage = ( currentPage ) => {
+        this.handleSetPage( "page", currentPage )
     };
 
-    handleChangePageSize = ( contextGetBodyData, currentPage, pageSize ) => {
-        const { rowSelection } = this.state;
+    handleChangePageSize = ( currentPage, pageSize ) => {
+        this.handleSetPage( "size", pageSize );
+    };
+
+    handleSetPage = ( flag, num ) => {
+        const { rowSelection, pageSize, currentPage } = this.state;
         rowSelection.selectedRowKeys = [];
         const checkData = [];
+        const pageData = { currentPage, pageSize };
 
-        this.setState( {
-            pageSize,
-            checkData,
-            rowSelection
-        }, () => {
-            this.getBodyData( contextGetBodyData );
-        } )
+        switch( flag ) {
+            case "page":
+                pageData.currentPage = num;
+                this.setState( {
+                    currentPage: num,
+                    checkData,
+                    rowSelection
+                } );
+            break;
+            case "size":
+                pageData.pageSize = num;
+                this.setState( {
+                    pageSize: num,
+                    checkData,
+                    rowSelection
+                } );
+        }
+
+        if( !!this.props.getPageData ) {
+            this.props.getPageData( pageData )
+        }
     };
 
     handleChangeTableRow = ( selectedRowKeys, selectedRows ) => {
-        if( this.props.getCheckData ) {
+        if( !!this.props.getCheckData ) {
             this.props.getCheckData( selectedRows );
         }
     };
@@ -98,7 +79,7 @@ class ListModule extends Component {
 
     render() {
         const {
-            showLoading, thData, bodyData, canSelect, rowSelection,
+            canSelect, rowSelection,
             total, currentPage, pageSize
         } = this.state;
 
@@ -129,8 +110,8 @@ class ListModule extends Component {
                                             current={ currentPage }
                                             pageSize={ pageSize }
                                             total={ total }
-                                            onPageChange={ this.handleChangePage.bind( this, data.getBodyData ) }
-                                            onPageSizeChange={ this.handleChangePageSize.bind( this, data.getBodyData ) }
+                                            onPageChange={ this.handleChangePage }
+                                            onPageSizeChange={ this.handleChangePageSize }
                                         />
                                     </div>
                                 </Fragment>

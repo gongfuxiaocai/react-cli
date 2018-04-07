@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { SearchPop } from 'SwiftPassUI';
 import { HomeContext } from 'Contexts/home_context';
-import HomeText from './HomeTest';
 
 class Home extends Component {
     constructor( props ) {
@@ -17,17 +16,16 @@ class Home extends Component {
     getBodyData = ( listData ) => {
         this.setState( {
             listData
-        } )
+        } );
+
+        //请求数据
+
     };
-
-
 
     handleClickTitle = () => {
         this.props.history.replace("/");
     };
-
-
-
+    
     render() {
         const { listData } = this.state;
 
@@ -39,9 +37,7 @@ class Home extends Component {
                     placeholder="请输入查询内容。。。"
                 />
                 <HomeContext.Provider value={ { listData, getBodyData: this.getBodyData } }>
-                    <HomeText
-                        context="homeTest_context"
-                    />
+
                 </HomeContext.Provider>
             </div>
         )
